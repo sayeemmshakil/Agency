@@ -1,0 +1,737 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.clr {
+    clear: both;
+}
+
+/* --------------------------------------------------
+                    Common CSS End
+-------------------------------------------------- */
+
+/* --------------------------------------------------
+                    Header Part Start
+-------------------------------------------------- */
+#header {
+    height: 100px;
+}
+
+.header_logo {
+    width: 20%;
+    line-height: 100px;
+    float: left;
+}
+
+.header_logo a:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.main_menu {
+    width: 80%;
+    float: left;
+    line-height: 100px;
+}
+
+.main_menu ul {
+    float: right;
+}
+
+.main_menu ul li {
+    float: left;
+    margin-left: 20px;
+}
+
+.main_menu ul li a {
+    color: #484c55;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 20px;
+    position: relative;
+}
+
+.main_menu ul li a:hover {
+    color: #49cbcd;
+    background: #f8f9fb;
+}
+
+.main_menu ul li a::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: #49cbcd;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.main_menu ul li:hover a::after {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+/* --------------------------------------------------
+                    Header Part End
+-------------------------------------------------- */
+
+/* --------------------------------------------------
+                    Banner Part Start
+-------------------------------------------------- */
+#banner{
+    background: url(../images/Banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.banner_text h1{
+    color: #ffffff;
+    font-size: 63px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.banner_text p{
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+    line-height: 37px;
+}
+
+.banner_text a{
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 40px;
+    padding: 12px 40px;
+    border: 3px solid #ffffff;
+    line-height: 1;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.banner_text a:hover{
+    background: #49cbcd;
+    border-color: #49cbcd;
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    -o-transform: scale(1.0);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* --------------------------------------------------
+                    Banner Part End
+-------------------------------------------------- */
+/* --------------------------------------------------
+                    Service Part Start
+-------------------------------------------------- */
+#service{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.serv_col{
+    width: 25%;
+    float: left;
+}
+
+.serv_col i{
+    color: #49cbcd;
+    font-size: 35px;
+    width: 99px;
+    height: 99px;
+    line-height: 99px;
+    border: 3px solid #49cbcd;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.serv_col h2{
+    color: #4e525d;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 32px;
+}
+
+.serv_col p{
+    color: #4e525d;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+    padding-top: 12px;
+}
+
+.serv_col a{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    background: #49cbcd;
+    margin-top: 15px;
+    padding: 3px 14px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.serv_col a:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* --------------------------------------------------
+                    Service Part End
+-------------------------------------------------- */
+
+/* --------------------------------------------------
+                    Portfolio Part Start
+-------------------------------------------------- */
+#portfolio{
+    background: #f1f1f1;
+    text-align: center;
+    padding: 86px 0 100px;
+}
+
+.common_head h2{
+    color: #4e525d;
+    font-size: 42px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.port_row{
+    margin-top: 48px;
+}
+
+.port_col{
+    float: left;
+    margin-right: 30px;
+}
+
+.port_col:nth-child(3){
+    margin-right: 0;
+}
+
+.port_img{
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.port_img:hover img{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.port_link a{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    background: #49cbcd;
+    padding: 17px 40px;
+    margin-top: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.port_link a:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* --------------------------------------------------
+                    Portfolio Part End
+-------------------------------------------------- */
+
+/* --------------------------------------------------
+                    Team Part Start
+-------------------------------------------------- */
+#team {
+    text-align: center;
+    padding: 86px 0 100px;
+}
+
+.team_row {
+    padding-top: 100px;
+}
+
+.team_text h3 {
+    color: #4e525d;
+    font-size: 42px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.team_text h4 {
+    color: #4e525d;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.team_text h5 {
+    color: #4e525d;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+
+.team_text p {
+    color: #4e525d;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+}
+
+.team_col {
+    width: 23.7%;
+    margin-right: 20px;
+    float: left;
+    position: relative;
+}
+
+.team_col:nth-child(4) {
+    margin-right: 0;
+}
+
+
+.team_icon img {
+    width: 50%;
+    max-width: 100%;
+    padding-bottom: 50px;
+}
+
+/* --------------------------------------------------
+                    Team Part End
+-------------------------------------------------- */
+
+/* --------------------------------------------------
+                    Pricing Part Start
+-------------------------------------------------- */
+#pricing {
+    padding: 100px 0;
+    text-align: center;
+    background: #f1f1f1;
+}
+
+.price_col {
+    width: 31.51%;
+    float: left;
+    margin-right: 32px;
+}
+
+.price_col:nth-child(3) {
+    margin-right: 0;
+}
+
+.price_head {
+    height: 75px;
+    background: #485460;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+.price_head:hover {
+    background: #49cbcd;
+}
+
+.price_head h2 {
+    font-size: 26px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    line-height: 75px;
+}
+
+.price_pay {
+    background: #f8f9fb;
+    border-bottom: 2px solid #f1f1f1;
+    height: 68px;
+}
+
+.price_pay h3 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #485460;
+    line-height: 68px;
+}
+
+.price_list ul {
+    background: #ffffff;
+}
+
+.price_list ul li {
+    height: 45px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.price_list ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 45px;
+    color: #8c9299;
+}
+
+.price_buy {
+    position: relative;
+}
+
+.price_check {
+    background: #f8f9fb;
+    height: 98px;
+}
+
+.price_click a {
+    position: absolute;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    left: 50%;
+    bottom: 11%;
+    color: #ffffff;
+    background: #788492;
+    padding: 10px 50px;
+    width: 172px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+.price_click a:hover {
+    background: #49cbcd;
+}
+
+/* --------------------------------------------------
+                    Pricing Part End
+-------------------------------------------------- */
+
+/* --------------------------------------------------
+                    Review Part Start
+-------------------------------------------------- */
+#review {
+    text-align: center;
+    padding: 85px 0 100px;
+}
+
+.review_row {
+    position: relative;
+}
+
+.review_left_arrow {
+    width: 50px;
+    float: left;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.review_right_arrow {
+    color: #8c8c8c;
+    width: 50px;
+    float: left;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.review_left_arrow a,
+.review_right_arrow a {
+    color: #8c8c8c;
+    font-size: 25px;
+}
+
+.review_left_arrow a:hover,
+.review_right_arrow a:hover {
+    color: #49cbcd;
+    transform: scale(1.9);
+    -webkit-transform: scale(1.9);
+    -moz-transform: scale(1.9);
+    -ms-transform: scale(1.9);
+    -o-transform: scale(1.9);
+}
+
+.review_blog {
+    float: left;
+    margin: 0 15%;
+}
+
+.review_blog h3 {
+    color: #4e525d;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.review_blog p {
+    color: #4e525d;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 30px 0;
+}
+
+.review_blog h4 {
+    color: #9a8faf;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+/* --------------------------------------------------
+                    Review Part End
+-------------------------------------------------- */
+
+/* --------------------------------------------------
+                    Footer Part Start
+-------------------------------------------------- */
+#footer {
+    background: url(../images/footer_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 85px 0 100px;
+    text-align: center;
+}
+
+.footer_heading h2 {
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.foot_row {
+    margin-top: 100px;
+}
+
+.foot_col-1 {
+    width: 440px;
+    float: left;
+    text-align: left;
+}
+
+.foot_col-1 h3 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.foot_col-1 p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 21px;
+    margin-top: 5px;
+}
+
+.foot_col-1 .foot_icon a {
+    margin-top: 38px;
+    margin-right: 11px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.foot_col-1 .foot_icon a:hover {
+    box-shadow: 0 0 10px 1px rgba(73, 203, 205, 0.25);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.foot_col-1 .contact_info {
+    margin-top: 12px;
+}
+
+.foot_col-1 .contact_info a {
+    display: block;
+    color: #bface2;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 6px;
+}
+
+.foot_col-2 {
+    width: 585px;
+    float: right;
+    text-align: right;
+}
+
+.foot_col-2 input {
+    width: 230px;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 25px;
+    padding: 16px 20px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.foot_col-2 input:first-child {
+    margin-left: 0;
+}
+
+.foot_col-2 textarea {
+    width: 488px;
+    height: 180px;
+    padding: 16px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 30px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.foot_col-2 a {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    background: #49cbcd;
+    margin-top: 25px;
+    padding: 7px 53px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.foot_col-2 a:hover {
+    box-shadow: 0 0 10px 1px rgba(73, 203, 205, 0.25);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/* --------------------------------------------------
+                    Footer Part End
+-------------------------------------------------- */
